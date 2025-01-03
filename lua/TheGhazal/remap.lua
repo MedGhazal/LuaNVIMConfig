@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
-vim.keymap.set('n' ,  '<leader>pv', vim.cmd.Ex)
+vim.keymap.set('n' ,  '<leader>no', vim.cmd.NvimTreeOpen)
+vim.keymap.set('n' ,  '<leader>nc', vim.cmd.NvimTreeClose)
 
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")

@@ -15,7 +15,23 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
 	use('wbthomason/packer.nvim')
+	use('nvim-tree/nvim-tree.lua')
+	use('nvim-tree/nvim-web-devicons')
 	use('olrtg/nvim-emmet')
+	
+	use {
+		"NeogitOrg/neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim",         -- required
+			"sindrets/diffview.nvim",        -- optional - Diff integration
+
+			-- Only one of these is needed.
+			"nvim-telescope/telescope.nvim", -- optional
+			"ibhagwan/fzf-lua",              -- optional
+			"echasnovski/mini.pick",         -- optional
+		},
+		config = true
+	}
 
 	use {
 		'nvim-telescope/telescope.nvim',
@@ -58,7 +74,7 @@ return require('packer').startup(function(use)
 			-- Autocompletion
 			{'hrsh7th/nvim-cmp'},         -- Required
 			{'hrsh7th/cmp-nvim-lsp'},     -- Required
-		{'hrsh7th/cmp-buffer'},       -- Optional
+			{'hrsh7th/cmp-buffer'},       -- Optional
 			{'hrsh7th/cmp-path'},         -- Optional
 			{'saadparwaiz1/cmp_luasnip'}, -- Optional
 			{'hrsh7th/cmp-nvim-lua'},     -- Optional
