@@ -12,6 +12,7 @@ vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 vim.keymap.set('n', 'ö', vim.cmd.bnext)
 vim.keymap.set('n', 'ä', vim.cmd.bprevious)
+vim.keymap.set('n' ,  '-', vim.cmd.bdelete)
 
 vim.keymap.set("x", '<leader>p', [["_dP]])
 vim.keymap.set({"n", 'v'}, "<leader>y", [["+y]])

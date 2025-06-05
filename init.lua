@@ -1,1 +1,1 @@
-require("TheGhazal")
+require('TheGhazal')
