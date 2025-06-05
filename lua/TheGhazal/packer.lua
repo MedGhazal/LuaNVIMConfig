@@ -58,6 +58,7 @@ return require('packer').startup(function(use)
 	use('preservim/tagbar')
 	use('monaqa/dial.nvim')
 	use('tmhedberg/SimpylFold')
+	use('mason-org/mason.nvim')
 
 	if packer_bootstrap then
 		require('packer').sync()
